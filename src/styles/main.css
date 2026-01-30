@@ -1,0 +1,63 @@
+:root {
+  /* Themes can be toggled by setting data-theme attribute on body */
+  
+  /* Paper Theme (Default) */
+  --bg-color: #f5f5f4;
+  --text-color: #2c2c2c;
+  --accent-color: #d97706; /* Amber-600 */
+  --sidebar-bg: #e7e5e4;
+  --border-color: #d6d3d1;
+
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1c1917; /* Stone-900 */
+  --text-color: #e7e5e4;
+  --accent-color: #d97706;
+  --sidebar-bg: #292524;
+  --border-color: #44403c;
+}
+
+[data-theme="sepia"] {
+  --bg-color: #fdf6e3;
+  --text-color: #5b4636;
+  --accent-color: #d33682;
+  --sidebar-bg: #eee8d5;
+  --border-color: #93a1a1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent-color);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--text-color);
+}
+
+button {
+  cursor: pointer;
+}
